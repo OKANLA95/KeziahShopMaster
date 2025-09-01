@@ -1,0 +1,85 @@
+export function commonStyles() {
+  return {
+    container: {
+      padding: '40px',
+      fontFamily: 'Inter, system-ui, Avenir, sans-serif',
+      backgroundColor: '#f9fafb',
+      minHeight: '100vh',
+      color: '#1f2937',
+      transition: 'all 0.3s ease-in-out',
+    },
+    header: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: '30px',
+    },
+    logoutButton: {
+      padding: '10px 18px',
+      backgroundColor: '#ef4444',
+      color: '#ffffff',
+      border: 'none',
+      borderRadius: '6px',
+      fontWeight: 500,
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease',
+    },
+    logoutButtonHover: {
+      backgroundColor: '#dc2626',
+    },
+    stats: {
+      display: 'flex',
+      gap: '24px',
+      marginBottom: '36px',
+      flexWrap: 'wrap',
+    },
+    card: {
+      flex: '1 1 200px',
+      backgroundColor: '#ffffff',
+      padding: '24px',
+      borderRadius: '12px',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+      textAlign: 'center',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+    },
+    cardHover: {
+      transform: 'translateY(-4px)',
+      boxShadow: '0 6px 18px rgba(0, 0, 0, 0.08)',
+    },
+    table: {
+      width: '100%',
+      borderCollapse: 'collapse',
+      backgroundColor: '#ffffff',
+      borderRadius: '8px',
+      overflow: 'hidden',
+      marginTop: '24px',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
+    },
+    th: {
+      backgroundColor: '#f3f4f6',
+      textAlign: 'left',
+      padding: '12px 16px',
+      fontWeight: 600,
+      borderBottom: '1px solid #e5e7eb',
+    },
+    td: {
+      padding: '12px 16px',
+      borderBottom: '1px solid #e5e7eb',
+    },
+    primaryBtn: {
+      backgroundColor: '#3b82f6',
+      color: '#ffffff',
+      padding: '12px 22px',
+      border: 'none',
+      borderRadius: '6px',
+      cursor: 'pointer',
+      fontWeight: 500,
+      fontSize: '16px',
+      transition: 'background-color 0.3s ease',
+      marginBottom: '20px',
+    },
+    primaryBtnHover: {
+      backgroundColor: '#2563eb',
+    },
+  };
+}

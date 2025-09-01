@@ -1,0 +1,149 @@
+/* General Styles */
+.invoice-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.invoice-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.invoice-header h1 {
+  font-size: 2.2rem;
+  color: #15803d; /* Tailwind green-700 */
+  margin: 0;
+}
+
+.invoice-header h2 {
+  font-size: 1.2rem;
+  color: #6b7280; /* Tailwind gray-600 */
+  margin: 0.5rem 0 0;
+}
+
+.invoice-logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Invoice Details */
+.invoice-details {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.invoice-details p {
+  margin: 0.5rem 0;
+}
+
+.invoice-details span {
+  font-weight: 600;
+  color: #111827; /* Tailwind gray-900 */
+}
+
+/* Action Buttons */
+.invoice-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.invoice-actions button {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.invoice-actions .confirm {
+  background-color: #16a34a;
+}
+
+.invoice-actions .confirm:hover {
+  background-color: #15803d;
+}
+
+.invoice-actions .edit {
+  background-color: #f59e0b;
+}
+
+.invoice-actions .edit:hover {
+  background-color: #d97706;
+}
+
+.invoice-actions .cancel {
+  background-color: #dc2626;
+}
+
+.invoice-actions .cancel:hover {
+  background-color: #b91c1c;
+}
+
+.invoice-actions .print {
+  background-color: #3b82f6;
+}
+
+.invoice-actions .print:hover {
+  background-color: #2563eb;
+}
+
+.invoice-actions .pdf {
+  background-color: #9333ea;
+}
+
+.invoice-actions .pdf:hover {
+  background-color: #7e22ce;
+}
+
+/* Footer */
+.invoice-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.invoice-footer p {
+  margin: 0.3rem 0;
+}
+
+/* Print Styling */
+@media print {
+  body {
+    background: none;
+  }
+
+  .invoice-container {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .invoice-actions {
+    display: none;
+  }
+
+  .invoice-footer {
+    color: black;
+    border-top: 1px solid black;
+  }
+}

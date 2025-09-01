@@ -1,0 +1,213 @@
+/* Base Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+.dark body {
+  background-color: #121212;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.dark .login-header {
+  background-color: #1f2937;
+  border-color: #333;
+  color: white;
+}
+.login-header img {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+.login-header h1 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+.login-header button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Main Section */
+.login-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.login-form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dark .login-form-wrapper {
+  background-color: #1e1e1e;
+  color: white;
+}
+.login-form-wrapper input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.dark .login-form-wrapper input {
+  background-color: #2c2c2c;
+  border-color: #444;
+  color: white;
+}
+.login-form-wrapper button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.login-form-wrapper .divider {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+.google-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.google-signin-btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+.phone-auth input {
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  background-color: #f4f4f4;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+.dark .login-footer {
+  background-color: #1f2937;
+  color: #aaa;
+  border-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-header h1 {
+    font-size: 1.4rem;
+  }
+  .login-form-wrapper {
+    padding: 1rem;
+  }
+}
+.signup-prompt {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.signup-prompt p {
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+.signup-form-wrapper,
+.login-form-wrapper {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.signup-form .form-input,
+.login-form-wrapper input {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-button {
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #303f9f;
+}
+
+.form-toggle label {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.shop-info h4 {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
