@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { auth, db } from '../firebase';
 import { useNavigate } from 'react-router-dom';
-import Header from '../components/loginHeader';
+import Header from '../components/LoginHeader';
 import Footer from '../components/Footer';
 
 export default function Signup() {

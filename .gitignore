@@ -26,3 +26,4 @@ dist-ssr
 "serviceAccountKey.json.json" 
 "serviceAccountKey.json.json" 
 "serviceAccountKey.json.json" 
+.vercel
